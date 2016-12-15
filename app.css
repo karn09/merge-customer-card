@@ -1,0 +1,128 @@
+  /*CSS applies whenever elements are added.  '^=' means "begins with" */
+
+#container {
+    max-height: 256px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    padding: 8px;
+    margin: 10px;
+}
+
+.ui.card.mainCard {
+    height: 100%;
+}
+
+.ui.header.cardHeader {
+    height: 100%;
+    color: rgba(0, 0, 0, .64)!important;
+    font-size: 1em;
+    text-overflow: ellipsis;
+    font-weight: 400;
+    margin: 0;
+}
+
+.headerContent {
+    min-height: 50px;
+}
+
+.bodyContent {
+    min-height: 206px;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.hr {
+    background-color: rgba(0, 0, 0, .06);
+    border-color: rgba(0, 0, 0, .06);
+    border-top: 1px solid rgba(0, 0, 0, .06);
+}
+
+.employeeName {
+    font-size: 14px;
+    display: inline-block;
+    color: rgba(0, 0, 0, .64);
+    max-width: 180px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.convoTitle {
+    display: inline-block;
+    max-width: 160px;
+    text-indent: -12px;
+    margin-left: 12px;
+}
+
+.convo_overflow {
+    display: inline-block;
+    max-width: 160px;
+    margin-left: 12px;
+}
+
+.orange {
+    color: orange;
+}
+
+.red {
+    color: #e54c3c;
+}
+
+.green {
+    color: #0ac775;
+}
+
+.employee_summary span {
+    float: right;
+}
+
+.timeStamp {
+    opacity: 0.3;
+}
+
+.convoTitle:before,
+.convo_count:before {
+    font: normal normal normal 12px/1 "Material Design Icons";
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+}
+
+.convoStatus_open:before,
+.open_convo:before {
+    content: "\F5D6";
+    color: #e54c3c;
+}
+
+.convoStatus_done:before,
+.done_convo:before {
+    content: "\F12C";
+    color: #0ac775;
+}
+
+.convoStatus_snoozed:before,
+.snoozed_convo:before {
+    content: "\F020";
+    color: orange;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    padding: 2px 0;
+    background: #C1C1C1;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+::-webkit-scrollbar-track {
+    padding: 2px 0;
+    background: darken(#C1C1C1, 10%);
+    border-radius: 5px;
+    border: 1px solid white;
+}
